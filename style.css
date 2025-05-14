@@ -1,0 +1,244 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero {
+    font-size: 64px;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-out;
+    text-shadow: 0 0 10px rgba(0, 140, 255, 0.3);
+}
+
+.subhero {
+    font-size: 28px;
+    color: #666;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-out;
+    text-shadow: 0 0 6px rgba(0, 140, 255, 0.2);
+}
+
+/* Link Section */
+#links {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.link-container {
+    display: flex;
+    gap: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#slogan-mark {
+    color: #4e54c8;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+    cursor: default;
+}
+
+#slogan-mark:hover {
+    text-shadow:
+        0 0 5px rgba(78, 84, 200, 0.6),
+        0 0 10px rgba(78, 84, 200, 0.5),
+        0 0 15px rgba(78, 84, 200, 0.4);
+    transform: scale(1.05);
+}
+
+.link h3 {
+    font-size: 22px;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    color: #4e54c8;
+    text-shadow: 0 0 8px rgba(78, 84, 200, 0.6);
+}
+
+
+
+
+
+
+
+
+#backButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#backButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+#backButton:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.project-ref-link {
+    text-decoration:underline;
+    color: #757ad1;
+}
+
+.project-demo-link {
+    color: #757ad1;
+    text-decoration:underline;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-container {
+    text-align: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.contact-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+  
+@media (max-width: 400px) {
+    .contact-section {
+      padding: 20px;
+    }
+}
+  
+
+.contact-form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.contact-form label {
+font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+padding: 12px;
+border: none;
+border-radius: 10px;
+font-size: 16px;
+transition: background 0.3s, color 0.3s;
+resize: vertical;
+}
+
+.contact-form button {
+padding: 12px;
+font-size: 16px;
+background-color: #4e63ea;
+color: white;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: background 0.2s;
+}
+
+.contact-form button:hover {
+background-color: #3c4ccf;
+}
+
+/* Light mode */
+.light-mode .contact-section {
+background: #fff;
+color: #333;
+}
+
+.light-mode input,
+.light-mode textarea {
+background-color: #f0f0f0;
+color: #000;
+}
+
+/* Dark mode */
+.dark-mode .contact-section {
+background: #2b2b35;
+color: #f0f0f0;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+background-color: #1e1e24;
+color: #f0f0f0;
+}

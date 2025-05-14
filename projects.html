@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tk_dev - Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="viewmode.css">
+    <link rel="stylesheet" href="showcase.css">
+    <link rel="stylesheet" href="terminal.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <section id="hero">
+        <h1 class="hero">My projects</h1>
+        <h2 class="subhero">Presenting a few cool projects</h2>
+    </section>
+    <section id="content">
+        <br>
+        <div class="content-container">
+            <div class="project-grid">
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-python-plain project-icon"></i>
+                    <div class="project-title">Code Editor</div>
+                    <div class="project-tech">Python, ttk, HTML</div>
+                    <div class="project-description">
+                        A Python Tkinter based code editor for HTML, CSS, JS and Markdown that can run everywhere a normal Python installation runs.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/Code-Editor">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-python-plain project-icon"></i>
+                    <div class="project-title">Finance Tracker</div>
+                    <div class="project-tech">Python, Pandas, CSV</div>
+                    <div class="project-description">
+                            A local-first finance management tool built with Python that supports import/export via CSV. Includes budget tracking, graphs, and category analysis.
+                            The repository is currently private, as it is still under development.
+                    </div>
+                </div>
+            
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-csharp-plain project-icon"></i>
+                    <div class="project-title">WinWebServer</div>
+                    <div class="project-tech">C#, WinForms</div>
+                    <div class="project-description">
+                            A simplistic and easy to use web server that can host static files both via HTTP and HTTPS using certificates.
+                            <a class="project-ref-link" href="https://github.com/hasderhi/WinWebServer">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-csharp-plain project-icon"></i>
+                    <div class="project-title">LANFileShare</div>
+                    <div class="project-tech">C#, WinForms</div>
+                    <div class="project-description">
+                        A simple local file-sharing web server with GUI, real-time stats, and QR code generation. Made for quick LAN-based file exchange.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/LANFileShare">View on Github</a>
+                    </div>
+                </div>
+            
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-javascript-plain project-icon"></i>
+                    <div class="project-title">Snake game</div>
+                    <div class="project-tech">JavaScript, HTML, CSS</div>
+                    <div class="project-description">
+                        Everyone learning to code should do this once.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/Snake">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-csharp-plain project-icon"></i>
+                    <div class="project-title">XLSconverter</div>
+                    <div class="project-tech">C#, WinForms</div>
+                    <div class="project-description">
+                        Converts .xls to .xlsx files. Useful if you have a large batch of .xls files.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/XLSconverter">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-csharp-plain project-icon"></i>
+                    <div class="project-title">CustomFileExplorer</div>
+                    <div class="project-tech">C#, WinForms</div>
+                    <div class="project-description">
+                        A custom file explorer for Windows. Not really useful, but interesting to play with.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/CustomFileExplorer">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-python-plain project-icon"></i>
+                    <div class="project-title">Bewertungsbogen (Rating system)</div>
+                    <div class="project-tech">Python</div>
+                    <div class="project-description">
+                        A pure Python program without external dependencies that creates .pdf rating papers.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/Bewertungsbogen3">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-python-plain project-icon"></i>
+                    <div class="project-title">Bubble screensaver</div>
+                    <div class="project-tech">Python, Pygame</div>
+                    <div class="project-description">
+                        It's exactly what the title says... A bubble screensaver.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/Bubble-Screensaver">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-python-plain project-icon"></i>
+                    <div class="project-title">Universal Image Tool CLI</div>
+                    <div class="project-tech">Python, PIL, imagehash, cairosvg</div>
+                    <div class="project-description">
+                        Combines lots of useful image manipulation and conversion tools into one simple command-line interface.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/universal-image-converter-cli">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-csharp-plain project-icon"></i>
+                    <div class="project-title">MouseClickTracker</div>
+                    <div class="project-tech">C#, WinAPI</div>
+                    <div class="project-description">
+                        Tracks your mouse clicks and displays them on an exportable heatmap. Not usable as keylogger, just so you know.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/MouseClickTracker">View on Github</a>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleDescription(this)">
+                    <i class="devicon-javascript-plain project-icon"></i>
+                    <div class="project-title">Decrypted - Escape Room</div>
+                    <div class="project-tech">JavaScript</div>
+                    <div class="project-description">
+                        A JavaScript escape room that takes you into a simulated PC workspace - all inside your webbrowser!
+                        Solve problems using your terminal knowledge, decrypt hidden files, use the built-in scripting language and escape!
+                        Currently only available as demo.
+                        <a class="project-ref-link" href="https://github.com/hasderhi/Escape-Room">View on Github</a>
+                        <br><br>
+                        <button class="project-demo-link" onclick="showTerminal()">Open Demo</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="terminal-hide">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                    <div class="close-button" title="Close"></div>
+                    <div class="window-dot yellow"></div>
+                    </div>
+                    <div class="terminal-body" id="terminal-output">
+                    Slash version 2.1.234 (Stable)<br>
+                    Type <code>help</code> for a list of possible commands.
+                    </div>
+                    <input type="text" class="terminal-input" placeholder="Type a command..." id="terminal-input">
+                </div>
+            </div>
+        </div>
+    </section>
+    <button id="backButton" onclick="goHome()">Back</button>
+    <script src="script.js"></script>
+    <script src="terminal.js"></script>
+</body>
+</html>
