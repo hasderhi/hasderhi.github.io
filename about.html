@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tk_dev - About</title>
-    <meta name="description" content="tk_dev - Software with passion!">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="viewmode.css">
-    <link rel="stylesheet" href="skillcards.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>tk_dev - Moved</title>
+  <meta name="description" content="hasderhi.dev has moved to tk-dev-software.com" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <style>
+    body,
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      scroll-behavior: smooth;
+      background-color: var(--frame-bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #24292e;
+      --accent-color: #4e54c8;
+      --frame-bg-color: #f6f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0d1117;
+        --text-color: #c9d1d9;
+        --accent-color: #4e50c8;
+        --frame-bg-color: #161b22;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin: 10px auto 25px;
+      color: var(--text-color);
+      opacity: 0.9;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent-color);
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(78, 84, 200, 0.4);
+    }
+  </style>
 </head>
 <body>
-    <section id="hero">
-        <h1 class="hero">About me</h1>
-        <h2 class="subhero">Hi, welcome to my site!</h2>
-    </section>
-    <section id="content">
-        <br>
-        <div class="content-container">
-            <h4>I'm Tobias Kisling, also known as <i>hasderhi</i> or <i>tk_dev</i>, a highschool student from Vienna, Austria.<br>
-            In my free time, I develop open-source apps and design websites.<br>
-            I'm a huge fan of clean websites without distractions.<br>
-            </h4>
-            <br>
-            <h2 class="subhero">My skills</h2>
-            <div class="grid">
-                <div class="card">
-                  <i class="devicon-python-plain colored"></i>
-                  <h3>Python</h3>
-                  <p>NumPy, Pandas, TensorFlow, tkinter, niceGUI</p>
-                </div>
-                <div class="card">
-                  <i class="devicon-csharp-plain colored"></i>
-                  <h3>C#</h3>
-                  <p>WinForms, WPF, Database</p>
-                </div>
-                <div class="card">
-                  <i class="devicon-javascript-plain colored"></i>
-                  <h3>JavaScript</h3>
-                  <p>React, Node.js</p>
-                </div>
-                <div class="card">
-                  <i class="devicon-cplusplus-plain colored"></i>
-                  <h3>C / C++</h3>
-                  <p>System-level programming</p>
-                </div>
-                <div class="card">
-                    <i class="devicon-windows11-plain colored"></i>
-                    <h3>WinAPI</h3>
-                    <p>Usage with C#, C++</p>
-                </div>
-                <div class="card">
-                  <i class="devicon-lua-plain colored"></i>
-                  <h3>Lua</h3>
-                  <p>Scripting and mods</p>
-                </div>
-                <div class="card">
-                  <i class="devicon-html5-plain colored"></i>
-                  <h3>Web</h3>
-                  <p>HTML, CSS, Tailwind, SQL</p>
-                </div>
-                <div class="card">
-                  <i class="devicon-git-plain colored"></i>
-                  <h3>Git (-Hub)</h3>
-                  <p>Experience using Git and GitHub</p>
-                </div>
-                <div class="card">
-                    <i class="devicon-bash-plain colored"></i>
-                    <h3>Bash</h3>
-                    <p>Scripting, task automation</p>
-                </div>
-                <div class="card">
-                    <i class="devicon-visualstudio-plain colored"></i>
-                    <h3>Visual Studio 2022</h3>
-                    <p>Experience working with VS2022</p>
-                </div>
-                <div class="card">
-                    <i class="devicon-vscode-plain colored"></i>
-                    <h3>Visual Studio Code</h3>
-                    <p>Experience working with vscode</p>
-                </div>
-                <div class="card">
-                    <i class="devicon-linux-plain colored"></i>
-                    <h3>Linux</h3>
-                    <p>Shell, package managers, server management</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <button id="backButton" onclick="goHome()">Back</button>
-    <script src="script.js"></script>
+  <div class="container">
+    <img src="favicon.png" alt="tk_dev logo" class="logo" />
+    <h1>I moved :)</h1>
+    <p>
+      This page is no longer available. All content has been moved to my new homepage:<br/>
+      <strong>tk-dev-software.com</strong>
+    </p>
+    <a href="https://tk-dev-software.com" class="button">Go to tk-dev-software.com</a>
+  </div>
 </body>
 </html>

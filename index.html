@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tk_dev</title>
-    <meta name="description" content="tk_dev - Software with passion!">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="viewmode.css">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tk_dev</title>
+  <meta name="description" content="tk_dev - Software with passion." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body,
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      scroll-behavior: smooth;
+      background-color: var(--frame-bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #24292e;
+      --accent-color: #4e54c8;
+      --frame-bg-color: #f6f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0d1117;
+        --text-color: #c9d1d9;
+        --accent-color: #4e50c8;
+        --frame-bg-color: #161b22;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin: 5px 0 20px;
+      color: var(--text-color);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .links a:hover {
+      transform: scale(1.05);
+      color: var(--accent-color);
+      text-shadow: 0 0 8px rgba(78, 84, 200, 0.6);
+    }
+
+    .names {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      color: var(--text-color);
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
-    <main>
-        <section id="hero">
-            <h1 class="hero">tk_dev</h1>
-            <h2 class="subhero">Software with <span id="slogan-mark">passion</span>.</h2>
-        </section>
-        <section id="links">
-            <div class="link-container">
-                <a class="link" href="about.html"><h3>About</h3></a>
-                <a class="link" href="projects.html"><h3>Projects</h3></a>
-                <a class="link" href="contact.html"><h3>Contact</h3></a>
-                <a class="link" href="https://github.com/hasderhi"><h3>Github</h3></a>
-            </div>
-        </section>
-        <footer class="footer-wrapper">
-            <span>Copyright (c) 2025 Tobias Kisling. <br>This website is solely for information about my open source software development.</span>
-        </footer>
-    </main>
-    <script src="script.js"></script>
+  <div class="container">
+    <img src="favicon.png" alt="tk_dev logo" class="logo" />
+    <h1>tk_dev</h1>
+    <h2>Software with passion.</h2>
+    <div class="names">
+      <div>@hasderhi on GitHub</div>
+      <div>Tobias Kisling</div>
+    </div>
+    <div class="links">
+      <a href="https://tk-dev-software.com" target="_blank">Main Page</a>
+      <a href="https://github.com/hasderhi" target="_blank">GitHub</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
 </body>
 </html>
