@@ -150,18 +150,23 @@
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
       border-color: transparent;
     }
+
+    #pronouns:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <img src="favicon.png" alt="tk_dev logo" class="logo" />
+      <img src="favicon.png" alt="tk_dev logo" class="logo" id="logo"/>
       <h1>tk_dev</h1>
       <h2>Software with passion.</h2>
       <div class="names">
         <div><i>@hasderhi</i> on GitHub</div>
         <div>Tobias Kisling</div>
-        <div><i>she/her - they/them</i></div>
+        <div><i><span id="pronouns">she/her - they/them</span></i></div>
       </div>
       <div class="links">
         <a href="https://tk-dev-software.com" target="_blank">Main Page</a>
@@ -176,5 +181,30 @@
 			</p>
     </div>
   </div>
+  <script>
+    let clicked = false;
+    const logo = document.getElementById('logo');
+    const pronouns = document.getElementById('pronouns');
+
+    pronouns.addEventListener('click', () => {
+      clicked = !clicked;
+
+      logo.src = clicked ? 'favicon_pride.png' : 'favicon.png';
+
+      logo.style.transition = 'transform 0.6s ease';
+      logo.style.transform = 'rotate(540deg) scale(1.2)';
+      
+      setTimeout(() => {
+        logo.style.transform = 'rotate(0deg) scale(1)';
+      }, 600);
+
+      if (clicked) {
+        document.body.style.background = 'linear-gradient(135deg, #ff5f6d, #ffc371, #24c6dc, #ab47bc)';
+        document.body.style.transition = 'background 0.8s ease';
+      } else {
+        document.body.style.background = 'var(--bg-gradient)';
+      }
+    });
+  </script>
 </body>
 </html>
