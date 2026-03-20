@@ -1,207 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tk_dev</title>
-  <meta name="description" content="tk_dev - Software with passion." />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <style>
-    :root {
-      --blue: #4e54c8;
-      --red: #b33951;
-      --bg-gradient: linear-gradient(135deg, var(--blue), var(--red));
-      --text-color: #24292e;
-      --card-bg: rgba(255, 255, 255, 0.8);
-      --button-bg: #ffffff;
-      --button-text: #24292e;
-      --button-hover-bg: var(--blue);
-      --button-hover-text: #ffffff;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg-gradient: linear-gradient(135deg, #2b2f80, #8a3147);
-        --text-color: #c9d1d9;
-        --card-bg: rgba(22, 27, 34, 0.85);
-        --button-bg: #161b22;
-        --button-text: #c9d1d9;
-        --button-hover-bg: var(--red);
-        --button-hover-text: #fff;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-      scroll-behavior: smooth;
-      color: var(--text-color);
-      background: var(--bg-gradient);
-      background-attachment: fixed;
-      overflow: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15), transparent 60%),
-                  radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1), transparent 60%);
-      transform: translate(-25%, -25%);
-      animation: float 15s ease-in-out infinite alternate;
-      z-index: 0;
-    }
-
-    @keyframes float {
-      0% { transform: translate(-25%, -25%) scale(1); }
-      100% { transform: translate(-20%, -20%) scale(1.1); }
-    }
-
-    .container {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 100vh;
-      padding: 20px;
-    }
-
-    .card {
-      background: var(--card-bg);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      padding: 40px 50px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
-    }
-
-    .logo {
-      width: 90px;
-      height: 90px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin: 0;
-      color: var(--text-color);
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin: 10px 0 25px;
-      opacity: 0.9;
-    }
-
-    a {
-      color: #c9d1d9;
-    }
-    .names {
-      margin-top: 10px;
-      font-size: 0.95rem;
-      opacity: 0.85;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 25px;
-      justify-content: center;
-      margin-top: 30px;
-    }
-
-    .links a {
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-      color: var(--button-text);
-      background: var(--button-bg);
-      padding: 10px 22px;
-      border-radius: 8px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      transition: all 0.25s ease;
-    }
-
-    .links a:hover {
-      transform: translateY(-2px) scale(1.05);
-      background: var(--button-hover-bg);
-      color: var(--button-hover-text);
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-      border-color: transparent;
-    }
-
-    #pronouns:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Domain is For Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .referral {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <img src="favicon.png" alt="tk_dev logo" class="logo" id="logo"/>
-      <h1>tk_dev</h1>
-      <h2>Software with passion.</h2>
-      <div class="names">
-        <div><i>@hasderhi</i> on GitHub</div>
-        <div>Annabeth Kisling</div>
-        <div><i><span id="pronouns">she/her</span></i></div>
-      </div>
-      <div class="links">
-        <a href="https://tk-dev-software.com" target="_blank">Main Page</a>
-      </div>
-      <br>
-      <br>
-      <p>
-        This website will be retired on <strong>May 1st, 2026 (2026-05-14)</strong><br>
-				<a href="https://tk-dev-software.com/legal">Legal Notice and Licensing</a>
-			</p>
+    <div class="container">
+        <h1>This Domain is For Sale</h1>
+        <p>Interested in purchasing this domain? Contact me or make an offer below.</p>
+        <p class="price">Asking Price: $20</p>
+        <p>For inquiries, email: contact@tk-dev-software.com</p>
+
+        <div class="referral">
+            <p>Looking for my projects? Visit my main site:</p>
+            <a href="https://tk-dev-software.com" target="_blank">tk-dev-software.com</a>
+        </div>
     </div>
-  </div>
-  <script>
-    let clicked = false;
-    const logo = document.getElementById('logo');
-    const pronouns = document.getElementById('pronouns');
-
-    pronouns.addEventListener('click', () => {
-      clicked = !clicked;
-
-      logo.src = clicked ? 'favicon_pride.png' : 'favicon.png';
-
-      logo.style.transition = 'transform 0.6s ease';
-      logo.style.transform = 'rotate(540deg) scale(1.2)';
-      
-      setTimeout(() => {
-        logo.style.transform = 'rotate(0deg) scale(1)';
-      }, 600);
-
-      if (clicked) {
-        document.body.style.background = 'linear-gradient(135deg, #ff5f6d, #ffc371, #24c6dc, #ab47bc)';
-        document.body.style.transition = 'background 0.8s ease';
-      } else {
-        document.body.style.background = 'var(--bg-gradient)';
-      }
-    });
-  </script>
 </body>
 </html>
